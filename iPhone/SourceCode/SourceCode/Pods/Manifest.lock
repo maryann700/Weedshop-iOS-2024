@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - GLNotificationBar (2.3.3)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - KRProgressHUD (2.2.2)
+  - libwebp (0.5.1):
+    - libwebp/core (= 0.5.1)
+    - libwebp/dec (= 0.5.1)
+    - libwebp/demux (= 0.5.1)
+    - libwebp/dsp (= 0.5.1)
+    - libwebp/enc (= 0.5.1)
+    - libwebp/mux (= 0.5.1)
+    - libwebp/utils (= 0.5.1)
+    - libwebp/webp (= 0.5.1)
+  - libwebp/core (0.5.1):
+    - libwebp/webp
+  - libwebp/dec (0.5.1):
+    - libwebp/core
+  - libwebp/demux (0.5.1):
+    - libwebp/core
+  - libwebp/dsp (0.5.1):
+    - libwebp/core
+  - libwebp/enc (0.5.1):
+    - libwebp/core
+  - libwebp/mux (0.5.1):
+    - libwebp/core
+  - libwebp/utils (0.5.1):
+    - libwebp/core
+  - libwebp/webp (0.5.1)
+  - SDWebImage/Core (4.0.0)
+  - SDWebImage/WebP (4.0.0):
+    - libwebp
+    - SDWebImage/Core
+  - SkyFloatingLabelTextField (2.0.1)
+  - TGLParallaxCarousel (0.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Crashlytics
+  - Fabric
+  - GLNotificationBar
+  - GoogleMaps
+  - GooglePlaces
+  - KRProgressHUD
+  - SDWebImage/WebP
+  - SkyFloatingLabelTextField (~> 2.0.0)
+  - TGLParallaxCarousel
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  GLNotificationBar: 1f13174638d2fa5ff17591de0153fd4cd688b0a1
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  KRProgressHUD: ee25f70e274d1933b2ad0c8583a8552a349ce85d
+  libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
+  TGLParallaxCarousel: 7736edf9e26a3f08f32d0a24fcb0c93edc8253ad
+
+PODFILE CHECKSUM: 19887140f58f1a212de36d50493b7f64a74568de
+
+COCOAPODS: 1.2.0

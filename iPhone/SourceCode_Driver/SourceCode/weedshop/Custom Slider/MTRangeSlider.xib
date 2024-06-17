@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTRangeSlider" customModule="weedshop" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MTRangeSlider" customModule="weedshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-ln-y8u">
+                    <rect key="frame" x="0.0" y="11" width="261" height="8"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riV-nq-KfZ">
+                    <rect key="frame" x="0.0" y="11" width="261" height="8"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kjf-CL-oqd" customClass="UIControl">
+                    <rect key="frame" x="118" y="3" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filterRadiousCircle" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-ou-e0m">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="hrz-vy-Vnz" appends="YES" id="tIC-RX-Nrf"/>
+                    </connections>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Gqx-ln-y8u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="6nC-em-oZn"/>
+                <constraint firstAttribute="bottom" secondItem="Gqx-ln-y8u" secondAttribute="bottom" constant="11" id="AeG-YW-Cz0"/>
+                <constraint firstItem="riV-nq-KfZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EuW-NL-kFq"/>
+                <constraint firstAttribute="trailing" secondItem="Gqx-ln-y8u" secondAttribute="trailing" id="Mpp-ZL-9cC"/>
+                <constraint firstItem="Gqx-ln-y8u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZkW-Mh-Aye"/>
+                <constraint firstAttribute="trailing" secondItem="riV-nq-KfZ" secondAttribute="trailing" id="m44-jd-mr8"/>
+                <constraint firstItem="riV-nq-KfZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="qTO-vb-hCA"/>
+                <constraint firstAttribute="bottom" secondItem="riV-nq-KfZ" secondAttribute="bottom" constant="11" id="v0R-PF-een"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="image" keyPath="imgThumb" value="MedicalCardVerification"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgSliderThumb" destination="xHl-ou-e0m" id="Gpy-zT-m8f"/>
+                <outlet property="viewSliderBG" destination="Gqx-ln-y8u" id="1K0-6O-bBW"/>
+                <outlet property="viewSliderSmall" destination="riV-nq-KfZ" id="WAc-zq-OKG"/>
+                <outlet property="viewSliderThumb" destination="Kjf-CL-oqd" id="e5s-E4-xu6"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="122"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="hrz-vy-Vnz">
+            <connections>
+                <action selector="panYellowView:" destination="iN0-l3-epB" id="08k-73-7e2"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="MedicalCardVerification" width="74" height="87"/>
+        <image name="filterRadiousCircle" width="23" height="23"/>
+    </resources>
+</document>

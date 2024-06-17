@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DragView" customModule="weedshop" customModuleProvider="target">
+            <connections>
+                <outlet property="DeliveryHilightedview" destination="kmp-AP-YbN" id="YjK-qC-EoO"/>
+                <outlet property="DrageScroll" destination="4Iq-oP-4oG" id="su4-FV-ahX"/>
+                <outlet property="ShopHilightedView" destination="e0m-DL-c2E" id="Mr4-C7-YrJ"/>
+                <outlet property="lbl_delivery" destination="WeU-lK-Ffi" id="gGZ-yf-Yd2"/>
+                <outlet property="lbl_shop" destination="2Hs-IP-HpL" id="hzr-Z8-vAA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="229"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhS-hb-FE4">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-vq-oaV" customClass="UIControl">
+                            <rect key="frame" x="119" y="0.0" width="47" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Hs-IP-HpL">
+                                    <rect key="frame" x="0.0" y="0.0" width="27" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-DL-c2E">
+                                    <rect key="frame" x="37" y="10" width="10" height="10"/>
+                                    <color key="backgroundColor" red="0.80392156859999997" green="0.0" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="bxf-D2-znN"/>
+                                        <constraint firstAttribute="width" constant="10" id="cej-tD-g6a"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="e0m-DL-c2E" firstAttribute="leading" secondItem="2Hs-IP-HpL" secondAttribute="trailing" constant="10" id="4pU-Kc-obo"/>
+                                <constraint firstAttribute="bottom" secondItem="2Hs-IP-HpL" secondAttribute="bottom" id="Ipf-DM-qRC"/>
+                                <constraint firstItem="2Hs-IP-HpL" firstAttribute="top" secondItem="f2y-vq-oaV" secondAttribute="top" id="SUb-RE-y6O"/>
+                                <constraint firstItem="e0m-DL-c2E" firstAttribute="trailing" secondItem="f2y-vq-oaV" secondAttribute="trailing" id="YYk-ll-5pq"/>
+                                <constraint firstItem="2Hs-IP-HpL" firstAttribute="leading" secondItem="f2y-vq-oaV" secondAttribute="leading" id="a3O-VY-nRv"/>
+                                <constraint firstItem="2Hs-IP-HpL" firstAttribute="top" secondItem="f2y-vq-oaV" secondAttribute="top" id="b6h-1P-TTx"/>
+                                <constraint firstItem="e0m-DL-c2E" firstAttribute="centerY" secondItem="f2y-vq-oaV" secondAttribute="centerY" id="hCR-kw-MAX"/>
+                                <constraint firstAttribute="bottom" secondItem="2Hs-IP-HpL" secondAttribute="bottom" id="u4y-E8-LjE"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="Shop_contoller:" destination="-1" eventType="touchUpInside" id="foe-S6-hDm"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFH-B4-iY4" customClass="UIControl">
+                            <rect key="frame" x="186" y="0.0" width="63" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WeU-lK-Ffi">
+                                    <rect key="frame" x="20" y="0.0" width="43" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmp-AP-YbN">
+                                    <rect key="frame" x="0.0" y="10" width="10" height="10"/>
+                                    <color key="backgroundColor" red="0.80392156859999997" green="0.0" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="uMI-au-hDL"/>
+                                        <constraint firstAttribute="width" constant="10" id="xBa-1b-Hxw"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="WeU-lK-Ffi" secondAttribute="bottom" id="JuB-JX-H3U"/>
+                                <constraint firstItem="WeU-lK-Ffi" firstAttribute="leading" secondItem="kmp-AP-YbN" secondAttribute="trailing" constant="10" id="PeV-md-bRB"/>
+                                <constraint firstItem="WeU-lK-Ffi" firstAttribute="top" secondItem="bFH-B4-iY4" secondAttribute="top" id="ZbV-jC-OPN"/>
+                                <constraint firstItem="kmp-AP-YbN" firstAttribute="centerY" secondItem="bFH-B4-iY4" secondAttribute="centerY" id="kkf-W4-Ak2"/>
+                                <constraint firstItem="kmp-AP-YbN" firstAttribute="leading" secondItem="bFH-B4-iY4" secondAttribute="leading" id="ln6-Zy-iLQ"/>
+                                <constraint firstAttribute="trailing" secondItem="WeU-lK-Ffi" secondAttribute="trailing" id="tRU-H0-eHV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="Delivery_contoller:" destination="-1" eventType="touchUpInside" id="bqD-73-M47"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bFH-B4-iY4" firstAttribute="centerY" secondItem="NhS-hb-FE4" secondAttribute="centerY" id="5hv-q5-1hS"/>
+                        <constraint firstItem="bFH-B4-iY4" firstAttribute="top" secondItem="NhS-hb-FE4" secondAttribute="top" id="HzS-72-skL"/>
+                        <constraint firstItem="f2y-vq-oaV" firstAttribute="top" secondItem="NhS-hb-FE4" secondAttribute="top" id="IIM-cJ-m1W"/>
+                        <constraint firstItem="f2y-vq-oaV" firstAttribute="trailing" secondItem="NhS-hb-FE4" secondAttribute="centerX" constant="-9" id="Rqx-TG-hO5"/>
+                        <constraint firstAttribute="height" constant="30" id="Zdl-gG-DaG"/>
+                        <constraint firstItem="bFH-B4-iY4" firstAttribute="leading" secondItem="NhS-hb-FE4" secondAttribute="centerX" constant="11" id="qhY-fy-ybs"/>
+                        <constraint firstItem="f2y-vq-oaV" firstAttribute="centerY" secondItem="NhS-hb-FE4" secondAttribute="centerY" id="xIP-3q-Ixd"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Iq-oP-4oG">
+                    <rect key="frame" x="0.0" y="30" width="350" height="199"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8ya-n8-6Jj"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NhS-hb-FE4" secondAttribute="trailing" id="44y-uU-vzw"/>
+                <constraint firstItem="4Iq-oP-4oG" firstAttribute="top" secondItem="NhS-hb-FE4" secondAttribute="bottom" id="7by-Up-mSZ"/>
+                <constraint firstItem="4Iq-oP-4oG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F03-II-hwc"/>
+                <constraint firstAttribute="bottom" secondItem="4Iq-oP-4oG" secondAttribute="bottom" id="Gib-eb-ziz"/>
+                <constraint firstItem="NhS-hb-FE4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gYc-Uo-rZ5"/>
+                <constraint firstAttribute="trailing" secondItem="4Iq-oP-4oG" secondAttribute="trailing" id="qAK-Hs-r9O"/>
+                <constraint firstItem="NhS-hb-FE4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vmd-Pd-Slr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-359" y="-405.5"/>
+        </view>
+    </objects>
+</document>

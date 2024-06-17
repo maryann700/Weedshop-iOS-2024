@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="weedshop" customModuleProvider="target">
+            <connections>
+                <outlet property="imgProduct" destination="zth-9u-70E" id="2Sf-if-pdG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zth-9u-70E">
+                    <rect key="frame" x="16" y="0.0" width="308" height="200"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zth-9u-70E" secondAttribute="trailing" constant="16" id="2um-3T-WeR"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="340-6L-XZk"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6jY-CJ-gPJ"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="EbR-bJ-nUE"/>
+                <constraint firstAttribute="trailing" secondItem="zth-9u-70E" secondAttribute="trailing" constant="16" id="TD2-Jz-wUl"/>
+                <constraint firstAttribute="bottom" secondItem="zth-9u-70E" secondAttribute="bottom" id="avn-on-mR9"/>
+                <constraint firstItem="zth-9u-70E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hST-bl-w7f"/>
+                <constraint firstAttribute="bottom" secondItem="zth-9u-70E" secondAttribute="bottom" id="rYm-tF-mQO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
